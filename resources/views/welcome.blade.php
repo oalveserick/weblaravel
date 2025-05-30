@@ -19,7 +19,7 @@
 <hr>
         @foreach($nomes as $nome)
             <!-- <p>{{$loop->index}}</p> -->
-            <p>{{$nome}}</p>
+            <p>{{$nome}}</p> 
         @endforeach
 
         {{--Este é o tipo de comentário certo--}}
