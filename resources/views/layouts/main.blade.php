@@ -28,9 +28,9 @@
     </head>
     <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="collapse navbar-collapse" id="navbar"></div>
+        <nav class="navbar navbar-expand-lg navbar-light" id="menu">
             <a href="/" class="navbar-brand"><img id="logo" src="/img/10000278.jpg" alt="Pisca Eventos"></a>
+            <div class="collapse navbar-collapse" id="navbar"></div>
             <ul class="navbar-nav">
                 <li class="nav-item"><a href="/" class="nav-link">Eventos</a></li>
                 <li class="nav-item"><a href="/events/create" class="nav-link">Criar Eventos</a></li>
@@ -40,7 +40,7 @@
         </nav>
     </header>
     @yield('content')
-    <footer>pisca eventos &copy; 2025</footer>
+    <footer> <p>pisca eventos &copy; 2025</p></footer>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     </body>
 </html>
