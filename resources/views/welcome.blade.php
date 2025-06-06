@@ -33,7 +33,8 @@
         @if(count($events) == 0 && $search)
             <p>Não foi possível encontrar nenhum evento com {{$search}}! <a href="/">Ver todos</a></p>
         @elseif(count($events) == 0)
-            <p>Não há nenhum evento próximo disponível...</p>
+            <p>Não há nenhum evento próximo disponível!!!</p>
+            <p>teste</p>
         @endif
     </div>
 </div>
