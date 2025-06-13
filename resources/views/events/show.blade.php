@@ -14,10 +14,14 @@
             <p class="event-city" ><ion-icon name="pin"></ion-icon>{{$event->city}}</p>
             <p class="events-participants"><ion-icon name="people"></ion-icon>{{count($event->users)}} participantes</p>
             <p class="event-owner"><ion-icon name="star"></ion-icon>{{$eventOwner['name']}}</p>
-            <form action="/events/join/{{$event->id}}" method="POST">
-                @csrf
-                <a href="/events/join/{{$event->id}}" class="btn btn-primary" id="event-submit" onclick="event.preventDefault(); this.closest('form').submit();" >Confirmar Presença</a>
-            </form>
+            @if(!$hasUserJoined)
+                <form action="/events/join/{{$event->id}}" method="POST">
+                    @csrf
+                    <a href="/events/join/{{$event->id}}" class="btn btn-primary" id="event-submit" onclick="event.preventDefault(); this.closest('form').submit();" >Confirmar Presença</a>
+                </form>
+            @else
+                <p class="already-joined-msg">Você já está participando deste evento.</p>
+            @endif
         </div>
         <div class="col-md-12" id="description-container">
             <h3>Sobre o evento:</h3>

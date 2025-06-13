@@ -13,8 +13,22 @@
     padding: 10px;
 }
 
+#info-container .already-joined-msg {
+    margin: 15px 0;
+    color: #004085;
+    background-color: #cce5ff;
+    border: 1px solid #B8DAFF;
+    padding: 10px;
+    width: 275px;
+}
+
 #logo {
     width: 50px;
+}
+
+.card img {
+    max-height: 200px;
+    min-height: 200px;
 }
 
 body {
@@ -80,6 +94,7 @@ header {
 }
 
 #search-container h1 {
+    margin-top: 90px;
     color: #FFF;
     font-weight: 900;
 }
